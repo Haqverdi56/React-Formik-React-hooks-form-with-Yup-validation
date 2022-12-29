@@ -23,6 +23,8 @@ const HookForm = () => {
     //   }, [])
       
       return (
+        <>
+        <h1>HOOK FORM</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
           <input {...register("productName")} placeholder='Product Name' />
           <p>{errors.productName?.message}</p>
@@ -35,7 +37,7 @@ const HookForm = () => {
           
           <input type="submit" />
         </form>
-      );
+      </>);
 }
 
 export default HookForm
